@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "projectwoven",
+	"version": "${version}",
+	"name": "Woven World",
+	"description": "An Open-Sourced Project.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/projectwoven/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.community.projectwoven.WovenWorld"
+		],
+		"fabric-datagen": [
+			"net.community.projectwoven.WovenWorldDataGenerator"
+		],
+		"client": [
+			"net.community.projectwoven.WovenWorldClient"
+		],
+		"terrablender": [
+			"net.community.projectwoven.world.biome.ModTerrablenderAPI"
+		]
+	},
+	"mixins": [
+		"projectwoven.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
